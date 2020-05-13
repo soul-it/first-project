@@ -31,7 +31,7 @@ public static void main(String[] args) {
 		new login(name,password);
 	}catch(LoginException e) {
 		System.out.println(e.getMessage());
-		main(null);
+		main(null);//循环执行main方法
 	}finally {
 		System.out.println("你可以强制退出");
 	}
